@@ -2,7 +2,9 @@
 *
 
 # Except the specific directory
-!2 Areas 🏞️/**
+!2 Areas 🏞️/
+
+!2 Areas 🏞️/Blog/
 
 # Include all files and directories within the specific directory
 !2 Areas 🏞️/Blog/**
