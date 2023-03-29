@@ -1,2 +1,8 @@
+# Ignore all files and directories
 *
-!link.md
+
+# Except the specific directory
+!2 Areas 🏞️/**
+
+# Include all files and directories within the specific directory
+!2 Areas 🏞️/Blog/**
