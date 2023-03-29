@@ -19,7 +19,7 @@ jobs:
       uses: actions/checkout@v2
       with:
         repository: cmac2712/blog # Replace with your Astro site repository's owner and name
-        token: ${{ secrets.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 }} # Use an access token stored in your blog posts repository's secrets
+        token: ${{ secrets.ACCESS_TOKEN }} # Use an access token stored in your blog posts repository's secrets
         path: blog 
 
     - name: Copy Blog Posts
