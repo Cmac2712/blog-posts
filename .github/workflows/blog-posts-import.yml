@@ -1,0 +1,39 @@
+name: Import Blog Posts to Astro Site
+
+on:
+  push:
+    branches:
+      - main # Trigger the workflow on pushes to the main branch of your blog posts repository
+
+jobs:
+  import_blog_posts:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Blog Posts Repository
+      uses: actions/checkout@v2
+      with:
+        path: blog-posts
+
+    - name: Checkout Astro Site Repository
+      uses: actions/checkout@v2
+      with:
+        repository: cmac2712/blog # Replace with your Astro site repository's owner and name
+        token: ${{ secrets.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 }} # Use an access token stored in your blog posts repository's secrets
+        path: blog 
+
+    - name: Copy Blog Posts
+      run: |
+        cp -r ./2 Areas 🏞️/Blog/* blog/src/content/blog/ # Replace 'YourObsidianBlogPostsFolder' with the folder in your blog posts repository and 'src/pages/blog/' with the folder in your Astro site
+
+    - name: Set up Git user
+      run: |
+        git config --global user.name "GitHub Actions Bot"
+        git config --global user.email "github-actions-bot@example.com"
+
+    - name: Commit and Push Blog Posts
+      run: |
+        cd blog 
+        git add .
+        git commit -m "Import blog posts from separate repository"
+        git push
