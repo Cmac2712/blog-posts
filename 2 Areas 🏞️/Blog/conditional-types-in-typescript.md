@@ -6,7 +6,7 @@ pubDate: "Mar 23 2023"
 
 #typescript #effective-typescript
 
-
+Typescript often offers us many ways of solving the same problem...
 
 This would allow us to pass in a number but receive a string. Not what we want.
 ```typescript
