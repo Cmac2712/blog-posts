@@ -10,6 +10,6 @@ This is a code block.
 
 ```typescript
 const doThing = () => {
-	ret
+	return 'thing done'
 }
 ```
