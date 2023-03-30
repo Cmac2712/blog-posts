@@ -6,6 +6,8 @@ pubDate: "Mar 23 2023"
 
 #typescript #effective-typescript
 
+
+
 This would allow us to pass in a number but receive a string. Not what we want.
 ```typescript
 function double(x: string | number): string | number
