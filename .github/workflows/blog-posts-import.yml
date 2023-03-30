@@ -21,6 +21,10 @@ jobs:
         repository: cmac2712/blog # Replace with your Astro site repository's owner and name
         token: ${{ secrets.ACCESS_TOKEN }} # Use an access token stored in your blog posts repository's secrets
         path: blog 
+    
+    - name: list dir structure
+      run: |
+        ls -la
 
     - name: Copy Blog Posts
       run: |
