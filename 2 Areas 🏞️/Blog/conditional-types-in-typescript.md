@@ -28,15 +28,17 @@ While this function technically works, it's not ideal. We could pass in a number
 
 Our next attempt is to use generics to constrain the input and output types:
 
-typescriptCopy code
-
-`function double<T extends string | number>(x: T): T function double(x: any) { 	return x + x }`
+```typescript
+function double<T extends string | number>(x: T): T function double(x: any) { 	return x + x }
+```
+`
 
 This version is better, but it has a caveat. If we pass a string _literal_, the type `T` is inferred as the string's literal type:
 
-typescriptCopy code
+```
 
-`function double<"hello world">(x: "hello world"): "hello world"`
+```
+function double<"hello world">(x: "hello world"): "hello world"`
 
 #### Attempt 3: Overloading Functions
 
