@@ -4,7 +4,7 @@ description: "How to use conditional types to your advantage"
 pubDate: "Mar 23 2023"
 ---
 
-## 
+## Conditional Types vs Function Overloads in Typescript
 
 ### Introduction
 
