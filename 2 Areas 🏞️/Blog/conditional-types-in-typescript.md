@@ -8,9 +8,7 @@ pubDate: "Mar 23 2023"
 
 ### Introduction
 
-TypeScript is a powerful language that provides a variety of ways to solve the same problem. Two of the features that help us solve the same problem are **
-
-Two of the features that TypeScript offers to help us achieve this is conditional types.
+TypeScript is a powerful language that provides a variety of ways to solve the same problem. Two of the features that help us solve the same problem are [https://www.typescriptlang.org/docs/handbook/2/conditional-types.html](conditional types) Two of the features that TypeScript offers to help us achieve this is conditional types.
 
 ### The Challenge: Doubling Strings and Numbers
 
