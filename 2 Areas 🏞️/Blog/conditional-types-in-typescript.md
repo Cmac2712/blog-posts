@@ -45,7 +45,7 @@ function double<"hello world">(x: "hello world"): "hello world"`
 
 #### Attempt 3: Overloading Functions
 
-Our next approach is to use function overloading:
+Let's try the function overload approach:
 
 ```typescript
 function double(x: string): string 
