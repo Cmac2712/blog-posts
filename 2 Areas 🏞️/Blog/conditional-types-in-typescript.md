@@ -12,7 +12,7 @@ TypeScript is a powerful language that provides a variety of ways to solve the s
 
 ### The Challenge: Doubling Strings and Numbers
 
-Imagine we want to create a `double` function that accepts either a string or a number as its argument and returns the doubled value. We want the returned type to match the input type i.e 2
+Imagine we want to create a `double` function that accepts either a string or a number as its argument and returns the doubled value. We want the returned type to match the input type i.e 2 doubled returns 4 but "two" doubled returns "twotwo".
 
 Let's explore some potential solutions:
 
