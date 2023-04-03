@@ -30,7 +30,7 @@ While this function technically works, it's not ideal. We could pass in a number
 
 #### Attempt 2: Using Generics
 
-You may also be tempted to use :
+You may also be tempted to use Generics:
 
 ```typescript
 function double<T extends string | number>(x: T): T function double(x: any) { 	return x + x }
