@@ -4,45 +4,60 @@ description: "How to use conditional types to your advantage"
 pubDate: "Mar 23 2023"
 ---
 
-#typescript #effective-typescript
+## Harnessing the Power of Conditional Types in TypeScript
 
-Typescript often offers us many ways of solving the same problem...
+### Introduction
 
-This would allow us to pass in a number but receive a string. Not what we want.
-```typescript
-function double(x: string | number): string | number
-function double(x: any) {
-	return x + x
-}
-```
+TypeScript is a powerful language that provides a variety of ways to solve the same problem. As developers, we always strive to write code that is flexible and maintainable. One of the features that TypeScript offers to help us achieve this is conditional types. In this blog post, we will explore how to use conditional types to create a robust and flexible `double` function that works seamlessly with both strings and numbers.
 
-This is better... 
-```typescript
-function double<T extends string | number>(x: T): T
-function double(x: any) {
-	return x + x
-}
-```
+### The Challenge: Doubling Strings and Numbers
 
-However, if we pass a string _literal_ the type T is inferred as the strings literal type:
-```typescript
-function double<"hello world">(x: "hello world"): "hello world"
-```
+Imagine we want to create a `double` function that accepts either a string or a number as its argument and returns the doubled value. However, we want the returned type to match the input type to avoid potential type errors. Let's explore some potential solutions:
 
-This is close:
-```typescript
-function double(x: string): string
-function double(x: number): number
-function double(x: any) {
-	return x + x
-}
-```
+#### Attempt 1: Basic Union Types
 
-However, it doesn't accept a type of `string|number`.
+Our first attempt is to use a union type for the input and output types:
 
-This works for all scenarios:
-```typescript
-function double<T extends string | number>(x: any): T extends string ? string : number {
-  return x + x
-}
-```
+typescriptCopy code
+
+`function double(x: string | number): string | number function double(x: any) { 	return x + x }`
+
+While this function technically works, it's not ideal. If we pass in a number, we might receive a string, which is not what we want.
+
+#### Attempt 2: Using Generics
+
+Our next attempt is to use generics to constrain the input and output types:
+
+typescriptCopy code
+
+`function double<T extends string | number>(x: T): T function double(x: any) { 	return x + x }`
+
+This version is better, but it has a caveat. If we pass a string _literal_, the type `T` is inferred as the string's literal type:
+
+typescriptCopy code
+
+`function double<"hello world">(x: "hello world"): "hello world"`
+
+#### Attempt 3: Overloading Functions
+
+Our next approach is to use function overloading:
+
+typescriptCopy code
+
+`function double(x: string): string function double(x: number): number function double(x: any) { 	return x + x }`
+
+While this version is close to what we want, it doesn't accept a type of `string|number`.
+
+#### The Solution: Conditional Types
+
+Finally, we can use conditional types to create a function that works for all scenarios:
+
+typescriptCopy code
+
+`function double<T extends string | number>(x: any): T extends string ? string : number {   return x + x }`
+
+This version of the `double` function accepts both strings and numbers and returns the correct type based on the input type. If `T` extends `string`, it returns a `string`. If `T` extends `number`, it returns a `number`. This implementation is both flexible and type-safe.
+
+### Conclusion
+
+Conditional types in TypeScript are a powerful tool that enables us to create flexible and type-safe functions. In this blog post, we've seen how to use conditional types to create a `double` function that works seamlessly with both strings and numbers. By harnessing the power of conditional types, you can create more robust and maintainable TypeScript code.
