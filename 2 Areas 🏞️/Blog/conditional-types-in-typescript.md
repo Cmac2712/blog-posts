@@ -19,7 +19,7 @@ Let's explore some potential solutions:
 
 #### Attempt 1: Basic Union Types
 
-You may at first be temp a union type for the input and output types:
+You may at first be tempted to use a union type instead of overloads or conditional types:
 
 ```typescript
 function double(x: string | number): string | number 
@@ -30,7 +30,7 @@ While this function technically works, it's not ideal. We could pass in a number
 
 #### Attempt 2: Using Generics
 
-Our next attempt is to use generics to constrain the input and output types:
+You may also be tempted to use :
 
 ```typescript
 function double<T extends string | number>(x: T): T function double(x: any) { 	return x + x }
