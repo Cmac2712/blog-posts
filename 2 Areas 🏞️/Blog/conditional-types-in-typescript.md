@@ -8,7 +8,7 @@ pubDate: "Mar 23 2023"
 
 ### Introduction
 
-TypeScript is a powerful language that provides a variety of ways to solve the same problem. One of the features that TypeScript offers to help us achieve this is conditional types. In this blog post, we will explore how to use conditional types to create a robust and flexible `double` function that works seamlessly with both strings and numbers.
+TypeScript is a powerful language that provides a variety of ways to solve the same problem. One of the features that TypeScript offers to help us achieve this is conditional types. In this blog post, we will explore how to use conditional types to add precision to our types.
 
 ### The Challenge: Doubling Strings and Numbers
 
