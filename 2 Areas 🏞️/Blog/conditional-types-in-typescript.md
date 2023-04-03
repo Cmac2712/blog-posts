@@ -1,6 +1,6 @@
 ---
-title: "Conditional Types in Typescript"
-description: "How to use conditional types to your advantage"
+title: "When to Use Conditional Types vs Function Overloads in TypeScript"
+description: "How to use conditional types to create more precise types"
 pubDate: "Mar 23 2023"
 ---
 
