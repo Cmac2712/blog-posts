@@ -22,7 +22,7 @@ Our first attempt is to use a union type for the input and output types:
 
 `function double(x: string | number): string | number function double(x: any) { 	return x + x }`
 
-While this function technically works, it's not ideal. We could p .
+While this function technically works, it's not ideal. We could pass in a number and receive a string and TypeScript wouldn't complain. Not what we want.
 
 #### Attempt 2: Using Generics
 
