@@ -4,11 +4,11 @@ description: "How to use conditional types to your advantage"
 pubDate: "Mar 23 2023"
 ---
 
-## Harnessing the Power of Conditional Types in TypeScript
+## Harnessing the Unique Power of Conditional Types in TypeScript
 
 ### Introduction
 
-TypeScript is a powerful language that provides a variety of ways to solve the same problem. As developers, we always strive to write code that is flexible and maintainable. One of the features that TypeScript offers to help us achieve this is conditional types. In this blog post, we will explore how to use conditional types to create a robust and flexible `double` function that works seamlessly with both strings and numbers.
+TypeScript is a powerful language that provides a variety of ways to solve the same problem. One of the features that TypeScript offers to help us achieve this is conditional types. In this blog post, we will explore how to use conditional types to create a robust and flexible `double` function that works seamlessly with both strings and numbers.
 
 ### The Challenge: Doubling Strings and Numbers
 
