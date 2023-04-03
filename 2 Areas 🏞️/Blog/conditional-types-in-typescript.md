@@ -35,18 +35,18 @@ function double<T extends string | number>(x: T): T function double(x: any) { 	r
 
 This version is better, but it has a caveat. If we pass a string _literal_, the type `T` is inferred as the string's literal type:
 
-```
-
-```
+```typescript
 function double<"hello world">(x: "hello world"): "hello world"`
+```
 
 #### Attempt 3: Overloading Functions
 
 Our next approach is to use function overloading:
 
-typescriptCopy code
 
-`function double(x: string): string function double(x: number): number function double(x: any) { 	return x + x }`
+```typescript
+function double(x: string): string function double(x: number): number function double(x: any) { 	return x + x }`
+```
 
 While this version is close to what we want, it doesn't accept a type of `string|number`.
 
