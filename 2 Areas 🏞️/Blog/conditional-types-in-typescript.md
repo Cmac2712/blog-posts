@@ -4,7 +4,7 @@ description: "How to use conditional types to your advantage"
 pubDate: "Mar 23 2023"
 ---
 
-## Harnessing the Power of Conditional Types in TypeScript
+## 
 
 ### Introduction
 
@@ -22,7 +22,7 @@ Our first attempt is to use a union type for the input and output types:
 
 ```typescript
 function double(x: string | number): string | number 
-function double(x: any) { 	return x + x }`
+function double(x: any) { return x + x }`
 ```
 
 While this function technically works, it's not ideal. We could pass in a number and receive a string and TypeScript wouldn't complain. Not what we want.
