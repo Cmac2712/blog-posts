@@ -4,7 +4,7 @@ description: "How to use conditional types to your advantage"
 pubDate: "Mar 23 2023"
 ---
 
-## Harnessing the Unique Power of Conditional Types in TypeScript
+## Harnessing the Power of Conditional Types in TypeScript
 
 ### Introduction
 
@@ -53,7 +53,6 @@ While this version is close to what we want, it doesn't accept a type of `string
 #### The Solution: Conditional Types
 
 Finally, we can use conditional types to create a function that works for all scenarios:
-
 
 ```typescript
 function double<T extends string | number>(x: any): T extends string ? string : number {   return x + x }`
