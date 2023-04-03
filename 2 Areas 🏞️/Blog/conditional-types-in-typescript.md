@@ -35,7 +35,6 @@ You may also be tempted to use Generics:
 ```typescript
 function double<T extends string | number>(x: T): T function double(x: any) { 	return x + x }
 ```
-`
 
 This version is better, but it has a caveat. If we pass a string _literal_, the type `T` is inferred as the string's literal type:
 
