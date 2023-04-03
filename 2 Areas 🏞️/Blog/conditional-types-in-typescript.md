@@ -12,13 +12,13 @@ TypeScript is a powerful language that provides a variety of ways to solve the s
 
 ### The Challenge: Doubling Strings and Numbers
 
-Imagine we want to create a `double` function that accepts either a string or a number as its argument and returns the doubled value. However, we want the returned type to match the input type to avoid potential type errors. Let's explore some potential solutions:
+Imagine we want to create a `double` function that accepts either a string or a number as its argument and returns the doubled value. Wwe want the returned type to match the input type i.e 2
+
+Let's explore some potential solutions:
 
 #### Attempt 1: Basic Union Types
 
 Our first attempt is to use a union type for the input and output types:
-
-typescriptCopy code
 
 `function double(x: string | number): string | number function double(x: any) { 	return x + x }`
 
