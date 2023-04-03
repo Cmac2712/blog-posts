@@ -48,17 +48,18 @@ function double(x: string): string
 function double(x: number): number function double(x: any) { 	return x + x }`
 ```
 
-While this version is close to what we want, it doesn't accept a type of `string|number`. We _could_ go ahead and add another function overload to accept a type of `string|number`
+While this version is close to what we want, it doesn't accept a type of `string|number`. We _could_ go ahead and add another function overload to accept a type of `string|number` but there is a more consice method we could use.
 
 #### The Solution: Conditional Types
 
 Finally, we can use conditional types to create a function that works for all scenarios:
 
-typescriptCopy code
 
-`function double<T extends string | number>(x: any): T extends string ? string : number {   return x + x }`
+```typescript
+function double<T extends string | number>(x: any): T extends string ? string : number {   return x + x }`
+```
 
-This version of the `double` function accepts both strings and numbers and returns the correct type based on the input type. If `T` extends `string`, it returns a `string`. If `T` extends `number`, it returns a `number`. This implementation is both flexible and type-safe.
+This version  accepts both strings and numbers and returns the correct type based on the input type. If `T` extends `string`, it returns a `string`. If `T` extends `number`, it returns a `number`. This implementation is both flexible and type-safe.
 
 ### Conclusion
 
