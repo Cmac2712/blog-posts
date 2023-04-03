@@ -43,12 +43,12 @@ function double<"hello world">(x: "hello world"): "hello world"`
 
 Our next approach is to use function overloading:
 
-
 ```typescript
-function double(x: string): string function double(x: number): number function double(x: any) { 	return x + x }`
+function double(x: string): string 
+function double(x: number): number function double(x: any) { 	return x + x }`
 ```
 
-While this version is close to what we want, it doesn't accept a type of `string|number`.
+While this version is close to what we want, it doesn't accept a type of `string|number`. We _could_ go ahead and add another function overload to accept a type of `string|number`
 
 #### The Solution: Conditional Types
 
