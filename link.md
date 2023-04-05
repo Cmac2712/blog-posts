@@ -1,1 +1,0 @@
-https://www.reddit.com/r/ChatGPT/comments/11sx3mv/is_anyone_else_getting_the_payments_page/
