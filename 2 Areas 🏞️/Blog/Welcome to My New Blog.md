@@ -4,8 +4,6 @@ description: "It is mine and I love it!"
 pubDate: "Mar 20 2023"
 ---
 
-I have been a web developer for the best part of a decade.
+I have been a web developer for the best part of a decade. In that time I have developed the odd insight into the practice. As I close in on a decade of this practice I think: "Why not unleash some of these insights unto the world?".
 
-In that time I have developed the odd insight into the practice of web development. As I close in on a decade of this practice I think: "Why not unleash some of these insights unto the world?".
-
-Expect to see posts here about React, TypeScript
+Expect to see posts here about React, TypeScript, the ever-evolving world of front-end javascript devlopemnt and maybe the odd opinion here 
