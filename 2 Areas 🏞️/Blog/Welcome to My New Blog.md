@@ -8,4 +8,8 @@ I have been a web developer for the best part of a decade. In that time I have d
 
 Expect to see posts here about React, TypeScript, the ever-evolving world of front-end javascript devlopemnt and maybe the odd opinion here and there.
 
-If that's the type of thing you like to read about then please take a look around. If not: please send me an abusive message on twitter
+If that's the type of thing you like to read about then please take a look around. If not: please send me an abusive message on [twitter](https://twitter.com/cmac2712)
+
+Kind regards,
+
+Craig
