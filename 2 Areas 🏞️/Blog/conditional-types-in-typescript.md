@@ -3,7 +3,7 @@ title: "When to Use Conditional Types vs Function Overloads in TypeScript"
 description: "How to use conditional types to create more precise types"
 pubDate: "Mar 23 2023"
 ---
-### Introduction
+## Introduction
 
 TypeScript is a powerful language that provides a variety of ways to solve the same problem. Two of the features that help us solve the same problem are [conditional types](https://www.typescriptlang.org/docs/handbook/2/conditional-types.html) and [function overloads](https://www.typescriptlang.org/docs/handbook/2/functions.html#function-overloads)
 Today I'm going to show you when to prefer conditional types over function overloads.
