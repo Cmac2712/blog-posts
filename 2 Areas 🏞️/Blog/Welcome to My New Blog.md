@@ -6,4 +6,6 @@ pubDate: "Mar 20 2023"
 
 I have been a web developer for the best part of a decade.
 
-In that time I have developed the odd insight into the practice of web development. As I close in on a decade of this prac
+In that time I have developed the odd insight into the practice of web development. As I close in on a decade of this practice I think: "Why not unleash some of these insights unto the world?".
+
+Expect to see posts here about React, TypeScript
