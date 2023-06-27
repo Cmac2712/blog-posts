@@ -6,7 +6,7 @@ pubDate: "Mar 23 2023"
 ## Introduction
 
 TypeScript is a powerful language that provides a variety of ways to solve the same problem. Two of the features that help us solve the same problem are [conditional types](https://www.typescriptlang.org/docs/handbook/2/conditional-types.html) and [function overloads](https://www.typescriptlang.org/docs/handbook/2/functions.html#function-overloads)
-Today I'm going to show you when to prefer conditional types over function overloads.
+Today, I'm going to show you when to prefer conditional types over function overloads.
 
 ### The Challenge: Doubling Strings and Numbers
 
