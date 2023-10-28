@@ -62,4 +62,4 @@ This version  accepts both strings and numbers and returns the correct type base
 
 ### Conclusion
 
-Conditional types in TypeScript are a powerful tool that enables us to create flexible and type-safe functions. In this blog post, we've seen how to use conditional types to create a `double` function that works correctly with both strings and numbers. By harnessing the power of conditional types, you can create more robust and maintainable TypeScript code. Yeha 
+Conditional types in TypeScript are a powerful tool that enables us to create flexible and type-safe functions. In this blog post, we've seen how to use conditional types to create a `double` function that works correctly with both strings and numbers. By harnessing the power of conditional types, you can create more robust and maintainable TypeScript code. Bada bing.
