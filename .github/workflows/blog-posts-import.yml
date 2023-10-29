@@ -28,7 +28,8 @@ jobs:
 
     - name: Copy Blog Posts
       run: |
-        cp -r ./blog-posts/2\ Areas\ 🏞️/Blog/* blog/src/content/blog/ # Replace 'YourObsidianBlogPostsFolder' with the folder in your blog posts repository and 'src/pages/blog/' with the folder in your Astro site
+        rm -rf blog/src/content/blog/ 
+        cp -r ./blog-posts/2\ Areas\ 🏞️/Blog/* blog/src/content/blog/ 
 
     - name: Set up Git user
       run: |
