@@ -28,7 +28,7 @@ jobs:
 
     - name: Copy Blog Posts
       run: |
-        rm -rf blog/src/content/blog/ 
+        ls -la ./blog-posts/2\ Areas\ 🏞️/Blog/*  
         cp -r ./blog-posts/2\ Areas\ 🏞️/Blog/* blog/src/content/blog/ 
 
     - name: Set up Git user
